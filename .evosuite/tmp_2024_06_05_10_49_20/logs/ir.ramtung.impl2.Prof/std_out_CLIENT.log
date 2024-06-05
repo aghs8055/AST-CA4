@@ -1,0 +1,75 @@
+* Starting client
+* Connecting to master process on port 18862
+* Analyzing classpath: 
+  - /home/ali/University/master/Advanced Software Testing/HWs/HW3/CA4/target/classes
+  - /home/ali/.m2/repository/junit/junit/4.12/junit-4.12.jar
+  - /home/ali/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar
+* Finished analyzing classpath
+* Generating tests for class ir.ramtung.impl2.Prof
+* Test criteria:
+  - Line Coverage
+  - Branch Coverage
+  - Exception
+  - Mutation testing (weak)
+  - Method-Output Coverage
+  - Top-Level Method Coverage
+  - No-Exception Top-Level Method Coverage
+  - Context Branch Coverage
+* Setting up search algorithm for whole suite generation
+[MASTER] 11:08:07.895 [pool-2-thread-1] WARN  TestSuiteSerialization - Cannot load tests because file does not exist: /home/ali/University/master/Advanced Software Testing/HWs/HW3/CA4/.evosuite/evosuite-seeds/ir.ramtung.impl2.Prof.seed
+* Loaded 0 tests from /home/ali/University/master/Advanced Software Testing/HWs/HW3/CA4/.evosuite/evosuite-seeds/ir.ramtung.impl2.Prof.seed
+* Total number of test goals: 
+  - Line 3
+  - Branch 3
+  - Exception 0
+  - MutationFactory 12
+  - Output 2
+  - Method 2
+  - MethodNoException 2
+  - CBranchFitnessFactory 3
+* Using seed 1717573087136
+* Starting evolution
+* Search finished after 3s and 42 generations, 26445 statements, best individual has fitness: 0.5
+* Writing sequences to pool
+* Minimizing test suite
+* Going to analyze the coverage criteria
+* Coverage analysis for criterion LINE
+* Coverage of criterion LINE: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion BRANCH
+* Coverage of criterion BRANCH: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Coverage analysis for criterion EXCEPTION
+* Coverage of criterion EXCEPTION: 100%
+* Total number of goals: 1
+* Number of covered goals: 1
+* Coverage analysis for criterion WEAKMUTATION
+* Coverage of criterion WEAKMUTATION: 100%
+* Total number of goals: 12
+* Number of covered goals: 12
+* Coverage analysis for criterion OUTPUT
+* Coverage of criterion OUTPUT: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHOD
+* Coverage of criterion METHOD: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion METHODNOEXCEPTION
+* Coverage of criterion METHODNOEXCEPTION: 100%
+* Total number of goals: 2
+* Number of covered goals: 2
+* Coverage analysis for criterion CBRANCH
+* Coverage of criterion CBRANCH: 100%
+* Total number of goals: 3
+* Number of covered goals: 3
+* Generated 4 tests with total length 24
+* Resulting test suite's coverage: 100% (average coverage for all fitness functions)
+* Generating assertions
+* Resulting test suite's mutation score: 83%
+* Compiling and checking tests
+* Writing JUnit test case 'Prof_ESTest' to /home/ali/University/master/Advanced Software Testing/HWs/HW3/CA4/.evosuite/tmp_2024_06_05_10_49_20/tests
+* Done!
+
