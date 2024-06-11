@@ -12,8 +12,7 @@ import ir.ramtung.impl1.LibraryGenerator.TestReference;
 import ir.ramtung.impl1.LibraryGenerator.TestMagazine;
 import ir.ramtung.impl1.LibraryGenerator.FixtureCount;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.fail;
+import static org.junit.Assert.*;
 
 @RunWith(JUnitQuickcheck.class)
 public class LibraryPropertiesImpl1Test {
@@ -277,5 +276,23 @@ public class LibraryPropertiesImpl1Test {
         } catch (Exception ignored) {
             fail("Got an unexpected error");
         }
+    }
+
+    @Property
+    public void checkExistenceOfBookTitleAfterAddingANewBook(
+            @From(LibraryGenerator.class)
+            @FixtureCount()
+            Library library
+    ) {
+        try {
+            library.addBook("Book", 1);
+            assertTrue(library.availableTitles().contains("Book"));
+        } catch (LibraryException e) {
+            fail("Got exception while adding book: " + e.getMessage());
+        } catch (Exception ignored) {
+            fail("Got an unexpected error");
+        }
+
+        assertEquals(1, library.availableTitles().size());
     }
 }
