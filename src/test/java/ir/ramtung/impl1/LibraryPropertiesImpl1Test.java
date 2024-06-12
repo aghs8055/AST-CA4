@@ -35,7 +35,7 @@ public class LibraryPropertiesImpl1Test {
     }
 
     @Property
-    public void equalityOfAddedPenaltyForEachDayAfterTenDays(
+    public void equalityOfAddedPenaltyForEachDayAfter55Days(
             @From(LibraryGenerator.class)
             @FixtureCount()
             @TestStuMember(stuName = "Ali", stuId = "123")
@@ -116,7 +116,7 @@ public class LibraryPropertiesImpl1Test {
     }
 
     @Property
-    public void illegalityOfMoreThanTwoExtendsBeforeReturningDate(
+        public void illegalityOfMoreThanTwoExtendsBeforeReturningDate(
             @From(LibraryGenerator.class)
             @FixtureCount(stuCount = 0, profCount = 0, bookCount = 0, magazineCount = 0, referenceCount = 0)
             @TestStuMember(stuName = "Ali", stuId = "123")

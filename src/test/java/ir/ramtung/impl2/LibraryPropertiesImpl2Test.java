@@ -35,7 +35,7 @@ public class LibraryPropertiesImpl2Test {
     }
 
     @Property
-    public void equalityOfAddedPenaltyForEachDayAfterTenDays(
+    public void equalityOfAddedPenaltyForEachDayAfter55Days(
             @From(LibraryGenerator.class)
             @FixtureCount()
             @TestStuMember(stuName = "Ali", stuId = "123")
